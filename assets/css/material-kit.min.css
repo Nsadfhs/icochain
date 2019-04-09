@@ -14858,16 +14858,17 @@ h2.title {
 
 .modal-dialog .modal-header {
     border-bottom: none;
-    padding: 24px 24px 0;
+    padding: 0 24px;
 }
 
 .modal-dialog .modal-body {
-    padding: 24px 24px 16px;
+    padding: 0 24px 24px 16px; 
+ 
 }
 
 .modal-dialog .modal-footer {
     border-top: none;
-    padding: 24px;
+    padding: 16px;
 }
 
 .modal-dialog .modal-footer.text-center {
