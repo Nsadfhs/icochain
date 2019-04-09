@@ -159,22 +159,6 @@ mediaquery 중단점
     }
 }
 
-/*
-.carousel-inner {
-    max-height: 80vh;
-}
-
-@media (max-width:767.98px) {
-
-}
-
-@media (min-width:992px) {
-    .carousel-inner {
-        max-height: 40vh;
-    }
-}
-*/
-
 .section-bottom {
     padding: 70px 0;
 }
@@ -239,7 +223,7 @@ mediaquery 중단점
 @media (max-width:768px) {
     .strong-white {
         font-weight: bold;
-        font-size: 3.5em;
+        font-size: 3em;
         color: white;
     }
 }
