@@ -57,21 +57,6 @@
 
 <body style="background-color:#132552;" onload="winCentre()" onunload="closeWin()">
 
-
-
-    <div class="footer text-center">
-        <div class="row" id="modals">
-            <div class="col-md-8 mr-auto ml-auto">
-                <button class="btn btn-block btn-grad" data-dismiss="modal"
-                    style="font-weight:bold;font-size:20px;height:50px;">
-                    close
-                </button>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
     <div class="page-header header-filter clear-filter back-filter "
         style="background-image: url('../assets/ICO-img/background/left-back.jpg');">
         <div class="container">
@@ -134,10 +119,24 @@
                             </div> -->
                 </div>
             </div>
-            <form name="myform">
-                <input type="checkbox" name="event">다음부터 이 창을 열지않음
-                <input type=button value="닫기" onclick="self.close()">
-            </form>
+            <div class="footer text-center">
+                <div class="row" id="modals">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <div class="float-left">
+                            <form name="myform">
+                                <input type="checkbox" name="event">다음부터 이 창을 열지않음
+                                <input type=button value="닫기" onclick="self.close()">
+                            </form>
+                        </div>
+                        <div class="col-sm-4 float-right">
+                            <button class="btn btn-block btn-grad" data-dismiss="modal"
+                                style="font-weight:bold;font-size:20px;height:50px;">
+                                close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
