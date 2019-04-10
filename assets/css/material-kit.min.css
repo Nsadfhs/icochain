@@ -11261,7 +11261,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 form {
-    margin-bottom: 1.125rem;
+    margin-bottom: 0.5rem;
 }
 
 .card form {
