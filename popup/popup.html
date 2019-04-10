@@ -41,19 +41,21 @@
                 setCookie("memo", "no", 1); // 1일 간 쿠키적용 
 
         }
-        if (document.layers) {
-            var sinist = screen.width / 2 - outerWidth / 2;
-            var toppo = screen.height / 2 - outerHeight / 2;
-        } else {
-            var sinist = screen.width / 2 - document.body.offsetWidth / 2;
-            var toppo = -75 + screen.height / 2 - document.body.offsetHeight / 2;
+        function winCentre() {
+            if (document.layers) {
+                var sinist = screen.width / 2 - outerWidth / 2;
+                var toppo = screen.height / 2 - outerHeight / 2;
+            } else {
+                var sinist = screen.width / 2 - document.body.offsetWidth / 2;
+                var toppo = -75 + screen.height / 2 - document.body.offsetHeight / 2;
+            }
+            self.moveTo(sinist, toppo);
         }
-        self.moveTo(sinist, toppo); 
-} 
+
     </script>
 </head>
 
-<body style="background-color:#132552;" onunload="closeWin()">
+<body style="background-color:#132552;" onload="winCentre()" onunload="closeWin()">
 
 
 
@@ -91,28 +93,23 @@
                             <br />
                             That’s way we have a direct partnership with the head management of exchanges.</h5>
                         <h5>Take a chance of listing on the hottest korean exchaiges.</h5>
-                        <div class="mob">
-                            <div class="row">
-                                <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/2.jpg" alt=""
-                                        class="w-75 h-100 small-img-radio" data-toggle="modal"
-                                        data-target="#contact_popup">
-                                </div>
-                                <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/3.jpg" alt=""
-                                        class="w-75 h-100 small-img-radio" data-toggle="modal"
-                                        data-target="#contact_popup">
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/2.jpg" alt=""
+                                    class="w-75 h-100 small-img-radio" data-toggle="modal" data-target="#contact_popup">
                             </div>
-                            <div class="row" style="height:110px;">
-                                <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/4.jpg" alt=""
-                                        class="w-75 h-100 small-img-radio" data-toggle="modal"
-                                        data-target="#contact_popup">
-                                </div>
-                                <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/6.jpg" alt=""
-                                        class="w-75 h-100 small-img-radio" data-toggle="modal"
-                                        data-target="#contact_popup">
-                                </div>
+                            <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/3.jpg" alt=""
+                                    class="w-75 h-100 small-img-radio" data-toggle="modal" data-target="#contact_popup">
                             </div>
-                            <!-- <div class="row" style="height:110px;">
+                        </div>
+                        <div class="row" style="height:110px;">
+                            <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/4.jpg" alt=""
+                                    class="w-75 h-100 small-img-radio" data-toggle="modal" data-target="#contact_popup">
+                            </div>
+                            <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/6.jpg" alt=""
+                                    class="w-75 h-100 small-img-radio" data-toggle="modal" data-target="#contact_popup">
+                            </div>
+                        </div>
+                        <!-- <div class="row" style="height:110px;">
                                 <div class="col-md-6 w-50 h-100"><img src="../assets/ICO-img/exchange/13.jpg" alt=""
                                         class="w-75 h-100 small-img-radio" data-toggle="modal"
                                         data-target="#contact_popup">
@@ -132,7 +129,6 @@
                                         data-target="#contact_popup">
                                 </div>
                             </div> -->
-                        </div>
                     </div>
                 </div>
             </div>
@@ -141,6 +137,8 @@
     <form name="myform">
         <input type="checkbox" name="event">다음부터 이 창을 열지않음
         <input type=button value="닫기" onclick="self.close()">
+    </form>
+
 </body>
 
 </html>
