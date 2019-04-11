@@ -16,6 +16,14 @@ html, body {
     width: 100vw;
 }
 
+.pop-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 15px 0;
+}
+
 /* -------------------------------------------------------------------
 
 2019.03.31
@@ -62,8 +70,8 @@ mediaquery 중단점
 } -----------------------------------------------------------*/
 
 .divider {
-    margin: 2rem 0;
-    /* Space out the Bootstrap <hr> more */
+    margin: 1rem 0;
+    border: solid .5px white;
     width: 80vw;
 }
 
