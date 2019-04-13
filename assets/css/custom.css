@@ -66,9 +66,9 @@ mediaquery 중단점
 } -----------------------------------------------------------*/
 
 .divider {
-    margin: 1rem 0;
+    margin: 5em 0;
     border: solid .5px white;
-    width: 80vw;
+    width: 30%;
 }
 
 .gray-filter::before {
