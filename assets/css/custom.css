@@ -17,7 +17,46 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    padding: 15px 15px 0 15px;
+    padding: 20px 20px 0 20px;
+}
+
+.pop-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 3;
+}
+
+.login-page .page-header>.pop-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+@media (min-width: 576px) {
+    .pop-container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pop-container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pop-container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pop-container{
+        max-width: 1140px;
+    }
 }
 
 /* -------------------------------------------------------------------
@@ -67,6 +106,12 @@ mediaquery 중단점
 
 .divider {
     margin: 5em 0;
+    border: solid .5px white;
+    width: 30%;
+}
+
+.pop-divider {
+    margin: 2.5em 0;
     border: solid .5px white;
     width: 30%;
 }
@@ -171,16 +216,19 @@ mediaquery 중단점
     padding: 70px 0;
 }
 
-.mt-6, .my-6 {
-    margin-top: 6rem!important
+.mt-6,
+.my-6 {
+    margin-top: 6rem !important
 }
 
-.mt-7, .my-7 {
-    margin-top: 7rem!important
+.mt-7,
+.my-7 {
+    margin-top: 7rem !important
 }
 
-.mt-8, .my-8 {
-    margin-top: 8rem!important
+.mt-8,
+.my-8 {
+    margin-top: 8rem !important
 }
 
 .caption {
@@ -300,13 +348,17 @@ mediaquery 중단점
     transition-property: transform, opacity;
 }
 
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
     /* move the element up by 5px */
 }
 
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
     opacity: 1;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
@@ -396,15 +448,15 @@ mediaquery 중단점
 /* Set a specific color for each brand */
 
 .w3-large {
-    font-size: 20px!important
+    font-size: 20px !important
 }
 
 .w3-xlarge {
-    font-size: 24px!important
+    font-size: 24px !important
 }
 
 .w3-middle {
-    font-size: 16px!important
+    font-size: 16px !important
 }
 
 .small-row {
@@ -431,4 +483,11 @@ mediaquery 중단점
     outline: 0;
     transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1);
     will-change: box-shadow, transform
+}
+
+.card.bg-darkblue,
+.card .card-header-darkblue,
+.card.card-rotate.bg-darkblue .back,
+.card.card-rotate.bg-darkblue .front {
+    background: linear-gradient(60deg, #2605df, #120170);
 }

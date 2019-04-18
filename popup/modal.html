@@ -33,24 +33,13 @@
 <body class="login-page sidebar-collapse">
     <div class="page-header header-filter back-filter"
         style="background-image: url('../assets/ICO-img/background/left-back.jpg'); background-size: cover; background-position: top left;">
-        <div class="container">
+        <div class="pop-container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                    <div class="card card-login">
+                    <div class="card card-login" style="background-color:rgba(13,19,34,0.64);">
                         <form class="form" method="" action="">
-                            <div class="card-header card-header-info text-center">
+                            <div class="card-header card-header-darkblue text-center">
                                 <h3 class="card-title">Have any questions?</h4>
-                                    <!-- <div class="social-line">
-                                    <a href="#pablo" class="btn btn-just-icon btn-link">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-just-icon btn-link">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                </div> -->
                             </div>
                             <p class="description text-center">
                                 Choose Messenger and send me your project,<br /> Any other coperations are welcome!!!
@@ -72,7 +61,7 @@
                                                 <img style="position: relative;
                                                             width: 28px;
                                                             top: -2px;"
-                                                    src="./assets/ICO-img/small/KakaoTalkText_Icon.jpg" alt=""
+                                                    src="../assets/ICO-img/small/KakaoTalkText_Icon.jpg" alt=""
                                                     srcset="">
                                                 imgonim
                                             </a>
@@ -97,25 +86,14 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <i class="fas fa-comment-dots"></i>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <span>
-                                                Add me and send me your informations.
-                                                <br />
-                                                (Project name, What you want to be listed, etc.)
-                                            </span>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="footer text-center">
                                 <div class="row" id="modals">
                                     <div class="col-md-8 mr-auto ml-auto">
-                                        <a class="btn btn-block btn-grad" href="../index.html"
-                                            style="font-weight:bold;font-size:20px;height:50px;">
+                                        <a class="btn btn-block btn-grad mt-50" href="../index.html"
+                                            style="font-weight:bold;font-size:20px;height:50px;padding:11px;">
                                             Back to page
                                         </a>
                                     </div>
@@ -126,16 +104,31 @@
                 </div>
             </div>
         </div>
-        <footer class="footer footer-default">
-            <div class="container">
-                <div class="copyright float-right">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>, <strong>Dealprotocol</strong> All right reserved.
+    </div>
+    <div class="modal fade" id="wechat_popup" tabindex="-1" role="dialog" style="background-color:rgba(13,19,34,0.64);">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content" style="background-color:#132552;">
+                <div class="modal-header">
+                    WECHAT
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="material-icons">clear</i>
+                    </button>
+                </div>
+                <div class="modal-body mr-auto ml-auto">
+                    <img src="../assets/ICO-img/small/wechat-QR.png" class="w-100" alt="" srcset="">
+                </div>
+                <div class="footer text-center">
+                    <div class="row" id="modals">
+                        <div class="col-md-8 mr-auto ml-auto">
+                            <button class="btn btn-block btn-grad" data-dismiss="modal"
+                                style="font-weight:bold;font-size:20px;height:50px;">
+                                close
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
     <!--   Core JS Files   -->
     <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
